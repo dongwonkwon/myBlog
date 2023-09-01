@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import springbootdeveloper.domain.Article;
 import springbootdeveloper.dto.AddArticleRequest;
 import springbootdeveloper.dto.ArticleResponse;
+import springbootdeveloper.dto.UpdateArticleRequest;
 import springbootdeveloper.service.BlogService;
 
 import java.util.List;
@@ -45,5 +46,14 @@ public class BlogApiController {
     public ResponseEntity<Void> deleteArticle(@PathVariable long id) {
         blogService.delete(id);
         return ResponseEntity.ok().build();
+    }
+
+    @PutMapping("/api/articles/{id}")
+    public ResponseEntity<Article> updateArticle(@PathVariable long id,
+                                                 @RequestBody UpdateArticleRequest request) {
+        Article updateArticle = blogService.update(id, request);
+
+        return ResponseEntity.ok().body(updateArticle);
+
     }
 }
