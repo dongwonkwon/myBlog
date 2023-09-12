@@ -17,10 +17,9 @@ import java.util.List;
 public class BlogService {
 
     private final BlogRepository blogRepository;
-    private LocalDateTime NOW = LocalDateTime.now();
 
     public Article save(AddArticleRequest request, String username) {
-        return blogRepository.save(request.toEntity(username, NOW, NOW));
+        return blogRepository.save(request.toEntity(username));
     }
 
     public List<Article> findAll() {
