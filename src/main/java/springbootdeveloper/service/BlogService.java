@@ -9,6 +9,7 @@ import springbootdeveloper.dto.AddArticleRequest;
 import springbootdeveloper.dto.UpdateArticleRequest;
 import springbootdeveloper.repository.BlogRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -16,9 +17,10 @@ import java.util.List;
 public class BlogService {
 
     private final BlogRepository blogRepository;
+    private LocalDateTime NOW = LocalDateTime.now();
 
     public Article save(AddArticleRequest request, String username) {
-        return blogRepository.save(request.toEntity(username));
+        return blogRepository.save(request.toEntity(username, NOW, NOW));
     }
 
     public List<Article> findAll() {
