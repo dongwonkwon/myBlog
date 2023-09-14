@@ -2,8 +2,7 @@
 <br>
 
 
-프로젝트 보러가기👉 <http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login>
-
+프로젝트 보러가기👉 [myBlog](http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login){: target="_blank"}
 >### 블로그 프로젝트
 >
 > 스프링부트3로 REST API 구현(블로그 글 생성,조회,수정,생성) ✔***완료***
