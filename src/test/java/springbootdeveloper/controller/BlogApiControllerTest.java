@@ -91,7 +91,7 @@ class BlogApiControllerTest {
         //설정한 내용을 바탕으로 전송
         ResultActions result = mockMvc.perform(post(url)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
-                        .principal(principal)
+                .principal(principal)
                 .content(requestBody));
 
         //then
