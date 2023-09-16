@@ -2,7 +2,7 @@
 <br>
 
 
-프로젝트 보러가기 👉 <a href="http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login" target="_blank"> myBlog </a>
+프로젝트 링크 👉 ***<a href="http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login" target="_blank"> myBlog </a>*** <br><br>
 >### 블로그 프로젝트
 >
 > 스프링부트3로 REST API 구현(블로그 글 생성,조회,수정,생성) ✔***완료***
@@ -35,3 +35,6 @@ feat: 블로그 글 수정,생성 기능 <br><br>
 feat: 스프링 시큐리티로 로그인/로그아웃, 회원가입 기능 구현 <br><br>
 feat: JWT로 로그인/로그아웃 구현하기 <br><br>
 feat: OAuth2로 로그인/로그아웃 구현 <br><br>
+feat: AWS에 프로젝트 배포 <br><br>
+feat: CI 추가 <br><br>
+feat: CI/CD 추가 <br><br>
