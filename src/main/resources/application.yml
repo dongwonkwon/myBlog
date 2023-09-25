@@ -19,5 +19,5 @@ spring:
               - email
               - profile
 jwt:
-  issuer: ajufresh@gmail.com
+  issuer: ehddnjs0710gmail.com
   secret_key: secret-key

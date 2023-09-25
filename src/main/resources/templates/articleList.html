@@ -27,7 +27,20 @@
         </div>
         <br>
     </div>
-    <button type="button" class="btn btn-secondary" onclick="location.href='/logout'">로그아웃</button>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" th:classappend="${1 == articles.pageable.pageNumber + 1} ? 'disabled'">
+            <a class="page-link" href="#" th:href="@{/articles(page=${articles.pageable.pageNumber - 1})}" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item" th:classappend="${i == articles.pageable.pageNumber + 1} ? 'disabled'" th:each="i : ${#numbers.sequence(startPage, endPage)}">
+            <a class="page-link" href="#" th:href="@{/articles(page=${i - 1})}" th:text="${i}">1</a></li>
+          
+          <li class="page-item" th:classappend="${articles.totalPages == articles.pageable.pageNumber + 1} ? 'disabled'">
+            <a class="page-link" href="#" th:href="@{/articles(page=${articles.pageable.pageNumber + 1})}">Next</a>
+          </li>
+        </ul>
+      </nav>
+    <button type="button" class="btn btn-secondary" style="float: right" onclick="location.href='/logout'">로그아웃</button>
 </div>
 
 <script src="/js/token.js"></script>
