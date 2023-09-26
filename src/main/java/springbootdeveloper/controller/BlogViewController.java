@@ -26,11 +26,13 @@ public class BlogViewController {
     private final BlogRepository blogRepository;
 
     @GetMapping("/articles")
-    public String getArticles(Model model, @PageableDefault(size = 5) Pageable pageable) {
-        Page<Article> page = blogRepository.findAll(pageable);
+    public String getArticles(Model model, @PageableDefault(size = 5) Pageable pageable,
+                              @RequestParam(required = false, defaultValue = "") String searchText) {
+//        Page<Article> page = blogRepository.findAll(pageable);
+        Page<Article> page = blogRepository.findByTitleContainingOrContentContainingOrderByIdDesc(searchText, searchText, pageable);
         Page<ArticleListViewResponse> articles = page.map(ArticleListViewResponse::new);
         int startPage = Math.max(1, articles.getPageable().getPageNumber() - 4);
-        int endPage = Math.max(articles.getTotalPages(), articles.getPageable().getPageNumber() - 4);
+        int endPage = Math.min(articles.getTotalPages(), articles.getPageable().getPageNumber() + 4);
         model.addAttribute("startPage",startPage);
         model.addAttribute("endPage",endPage);
         model.addAttribute("articles", articles);
