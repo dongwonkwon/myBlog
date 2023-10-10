@@ -1,7 +1,8 @@
 # myBlog
 ## 구성도
 
-![myBlog diagram](https://github.com/dongwonkwon/myBlog/assets/90139277/725fe307-3112-401a-bcd1-63249187ddb5)
+![myBlog diagram (3)](https://github.com/dongwonkwon/myBlog/assets/90139277/2041aace-8179-4db2-bdd2-1af47a49413f)
+
 
 프로젝트 보러가기 👉 <a href="http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login" target="_blank"> myBlog </a>
 >### 블로그 프로젝트
