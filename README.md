@@ -1,10 +1,12 @@
 # myBlog
 ## 구성도
-
-![myBlog diagram (3)](https://github.com/dongwonkwon/myBlog/assets/90139277/2041aace-8179-4db2-bdd2-1af47a49413f)
-
-
 프로젝트 보러가기 👉 <a href="http://springboot-developer-env-1.eba-hs4fdntj.ap-northeast-2.elasticbeanstalk.com/login" target="_blank"> myBlog </a>
+<br><br><br><br>
+![myBlog diagram (5)](https://github.com/dongwonkwon/myBlog/assets/90139277/d48def6f-aedb-406c-9551-acf01e96706c)
+<br><br><br><br>
+
+
+<br><br>
 >### 블로그 프로젝트
 >
 > 스프링부트3로 REST API 구현(블로그 글 생성,조회,수정,생성) ✔***완료***
